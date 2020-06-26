@@ -55,6 +55,11 @@
     });
   };
 
+  $results.on("click", "li", function () {
+    const id = $(this).data("id");
+    fetchOneCharacter(id);
+  });
+
   let page = 0;
   let search = null;
 
@@ -78,15 +83,18 @@
         data.data.results.forEach((character) => {
           const $tmpl = $tmplCharacter.clone();
           $tmpl.attr("id", null);
+
+          $tmpl.data("id", character.id);
+
           $tmpl.find(".avatar").attr({
             alt: character.name,
             src: getImage(character.thumbnail),
           });
           $tmpl.find(".name").text(character.name);
-          $tmpl.find(".link").on("click", () => {
-            fetchOneCharacter(character.id);
-          });
-          $tmpl.appendTo($results).show();
+          // $tmpl.find(".link").on("click", () => {
+          //   fetchOneCharacter(character.id);
+          // });
+          $tmpl.appendTo($results).fadeIn();
         });
 
         if (page === 1 && !data.data.results.length) {

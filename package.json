@@ -1,0 +1,15 @@
+{
+  "name": "sb_jquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sirv public --dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sirv-cli": "^1.0.1"
+  }
+}

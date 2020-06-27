@@ -1,0 +1,10 @@
+https://github.com/lukeed/sirv
+https://getuikit.com/
+https://api.jquery.com/
+https://fancyapps.com/fancybox/3/
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection
+http://youmightnotneedjquery.com/
+https://svelte.dev/
+https://github.com/emirotin/marvel-sapper-REF
+
+https://github.com/emirotin/sb_jquery_done
